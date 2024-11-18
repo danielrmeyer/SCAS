@@ -18,6 +18,9 @@ class Expr protected (protected val ptr: MemorySegment):
   def cbrt(): Expr = unaryOp(cwrapper_h.basic_cbrt)
   def abs(): Expr = unaryOp(cwrapper_h.basic_abs)
   def expand(): Expr = unaryOp(cwrapper_h.basic_expand)
+  def negate(): Expr = unaryOp(cwrapper_h.basic_neg)
+
+
 //  def expand(): Expr =
 //    val expanded = cwrapper_h.basic_new_heap()
 //    try
