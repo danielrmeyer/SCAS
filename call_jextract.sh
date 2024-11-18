@@ -1,0 +1,35 @@
+jextract \
+  -I/usr/local/include/symengine \
+  -l symengine \
+  -t com.example.symengine \
+  --output output_dir \
+  --include-function basic_new_heap \
+  --include-function basic_free_heap \
+  --include-function symbol_set \
+  --include-function integer_set_si \
+  --include-function basic_add \
+  --include-function basic_sub \
+  --include-function basic_mul \
+  --include-function basic_div \
+  --include-function basic_pow \
+  --include-function basic_expand \
+  --include-function basic_sqrt \
+  --include-function basic_cbrt \
+  --include-function basic_factor \
+  --include-function basic_abs \
+  --include-function basic_diff \
+  --include-function basic_neg \
+  --include-function basic_evalf \
+  --include-function basic_simplify \
+  --include-function basic_parse \
+  --include-function basic_str \
+  --include-function basic_str_free \
+  --include-function basic_serialize \
+  --include-function basic_deserialize \
+  --include-function basic_eq \
+  --include-function basic_neq \
+  --include-struct CRCPBasic_C \
+  --include-struct CDenseMatrix \
+  --include-struct CSparseMatrix \
+  --include-struct CVectorInt \
+  /usr/local/include/symengine/cwrapper.h
