@@ -1,7 +1,7 @@
 # SCAS (Scala Computer Algebra System)
 
 * The goal of this project is to create a computer algebra system for Scala 3
-* First goal is to wrap the symengine c++ library using the new java ffm library.
+* First goal is to wrap the symengine c++ library using the new java ffm library (project Panama).
 * Second goal is to implement the simplify method in Scala 3 once all the methods in cwrapper.h have been exposed.
 
 # Example
