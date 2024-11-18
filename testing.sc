@@ -1,6 +1,12 @@
 val x = Var("x") // Create a symbol
-val expr = (x + 1) ^ 2 // Create an expression
-val expandedExpr = expr.expand() // Expand the expression
-println(expandedExpr) // Should produce simplified output
+val y = Var("y")
+println(y)
+val expr2 = (x + y) ^ 6
 
-println(expandedExpr.diff(x))
+expr2.expand()
+
+
+x.negate()
+
+
+
