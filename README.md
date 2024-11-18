@@ -1,5 +1,21 @@
-# SCAS (Scala Computer Alebra System)
+# SCAS (Scala Computer Algebra System)
 
-* Using the new java FFM api we are building a scala wrapper around symengine
-* 
+* The goal of this project is to create a computer algebra system for Scala 3
+* First goal is to wrap the symengine c++ library using the new java ffm library.
+* Second goal is to implement the simplify method in Scala 3 once all the methods in cwrapper.h have been exposed.
+
+# Example
+
+```scala
+val x = Var("x") // Create a symbol
+val expr = (x + 1) ^ 2 // Create an expression
+val expandedExpr = expr.expand() // Expand the expression
+println(expandedExpr) // 1 + 2*x + x**2
+
+println(expandedExpr.diff(x)) // 2 + 2*x
+```
+
+
+
+
 
